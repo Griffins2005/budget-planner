@@ -1,0 +1,223 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: lightslategray;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0 0 1rem;
+}
+
+button {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+.header {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: 4px solid #388e3c;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+/* Income Form */
+.income-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 1rem;
+}
+
+.income-form label {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.income-form input {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.income-form button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.income-form button:hover {
+  background-color: #388e3c;
+}
+
+/* Expense Form */
+.expense-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 1rem;
+}
+
+.expense-form label {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.expense-form input,
+.expense-form select {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.expense-form button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.expense-form button:hover {
+  background-color: #e64a19;
+}
+
+/* Expense List */
+.expense-list {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.expense-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.expense-list th,
+.expense-list td {
+  padding: 0.8rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.expense-list th {
+  background-color: #f1f1f1;
+  font-weight: bold;
+}
+
+.expense-list button {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  color: white;
+  background-color: #e53935;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.expense-list button:hover {
+  background-color: #d32f2f;
+}
+
+/* Summary */
+.summary {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.summary div {
+  text-align: center;
+}
+
+.summary .income {
+  color: #4caf50;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.summary .expenses {
+  color: #f44336;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.summary .balance {
+  color: #2196f3;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Chart Section */
+.chart-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.chart-container {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .expense-form {
+    flex-direction: column;
+  }
+}
